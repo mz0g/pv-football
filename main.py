@@ -8,7 +8,7 @@ def main():
     video_frames = read_video("input_videos/football-input.mp4")
 
     # Initialize Tracker
-    tracker = Tracker('/Users/zoghby.marc/Desktop/pv/weights/dataset-v3/best.pt')
+    tracker = Tracker('/Users/blinded/Desktop/pv/weights/dataset-v3/best.pt')
     tracks = tracker.get_object_tracks(video_frames,
                                        read_from_stub=True,
                                        stub_path='stubs/track_stubs.pkl')
